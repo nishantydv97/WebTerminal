@@ -1,0 +1,28 @@
+<h1>Test For DevOps Engineering</h1>
+<p align="center"><b>Start Your Test.</b></p>
+<body bgcolor="#E6E6FA">
+
+<p align="right">
+{% if user.is_authenticated %}
+<span style="font-weight:bold">
+    <a href="/logout/">Logout</a>
+</span>
+
+
+
+{% else %}
+    <a href="/login/?next={{ request.path }}">Login</a>
+{% endif %}
+
+
+<a href="/home/">Home</a>
+</p>
+
+<center>
+<form action="/exam_page/" method="GET">
+        <input type="submit" value="Click Here To Start Your Test"
+</form>
+</center>
+
+
+</body>
